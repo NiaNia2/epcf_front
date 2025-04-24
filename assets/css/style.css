@@ -1,15 +1,100 @@
 @font-face {
-  font-family: "Regular";
-  src: url();
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
   font-weight: 400;
 }
+@font-face {
+  font-family: "Source";
+  src: url(../fonts/SourceCodePro/SourceCodePro-Regular.ttf);
+}
+main .titre .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .titre .title .name {
+  letter-spacing: 2rem;
+  text-transform: uppercase;
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+main .titre .title .training {
+  letter-spacing: 1rem;
+  width: 80vh;
+  text-align: center;
+}
+main .profil .cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+main .profil .cards p {
+  text-align: center;
+}
+main .profil .cards .ghibli {
+  width: 30%;
+  background-color: #446983;
+  border-radius: 0.8rem 0 0.8rem 0;
+}
+main .profil .buttons {
+  width: 100%;
+  margin: 5rem 0 0 19rem;
+}
+main .competence .two-card {
+  display: flex;
+  justify-content: space-around;
+}
+main .competence .two-card .card .blabla {
+  display: flex;
+  align-items: center;
+}
+main .competence .two-card .card .logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  gap: 3rem;
+}
+
+header nav .nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn {
+  border-radius: 0.8rem 0 0.8rem 0;
+  background-color: #2E4A2E;
+  font-size: 2rem;
+  padding: 1rem;
+  width: 15%;
+  text-align: center;
+  font-family: "Source";
+}
+
+.btn:hover {
+  background-color: #D3D3D3;
+  color: #2E4A2E;
+  font-weight: bold;
+}
+.btn:hover a {
+  color: #2E4A2E;
+}
+
+.card {
+  width: 30%;
+  background-color: #446983;
+  border-radius: 0.8rem 0 0.8rem 0;
+  padding: 1rem;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "";
+  font-family: "Roboto";
   margin: 0;
+  background-color: #2C3E50;
 }
 
 section {
@@ -23,12 +108,47 @@ ul {
 
 a {
   text-decoration: none;
+  color: #D3D3D3;
 }
 
 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 0.8rem 0 0.8rem 0;
+}
+
+h1 {
+  color: #D3D3D3;
+  font-size: 2.5rem;
+}
+
+h2 {
+  color: #D3D3D3;
+  font-size: 2.25rem;
+}
+
+h3 {
+  color: #D3D3D3;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #446983;
+}
+
+h4 {
+  color: #D3D3D3;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  color: #D3D3D3;
+  font-size: 1.5rem;
+  font-family: "Source";
 }
 
 .container {

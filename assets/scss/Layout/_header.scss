@@ -2,15 +2,23 @@
 
 header {
   nav {
+    .nav {
+      display: flex;
+      justify-content: space-evenly;
+    }
 
-  };
-};
+  }
+
+  ;
+}
+
+;
 
 // Responsive:
-@media screen and (max-width: 768px) {
-  
-};
+@media screen and (max-width: 768px) {}
 
-@media screen and (max-width: 360px) {
-  
-};
+;
+
+@media screen and (max-width: 360px) {}
+
+;

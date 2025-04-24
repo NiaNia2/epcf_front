@@ -1,19 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="icon" type="image/png" href="assets/img/fav_icon/favicon-96-96.png" sizes="96x96" />
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/lib/font-awesome/all/all.min.css">
+    <link rel="stylesheet" href="assets/img/lib/font-awesome/all/all.css.css">
 </head>
+
 <body>
     <header>
-        <nav></nav>
+        <nav>
+            <ul class="nav">
+                <li class="btn"><a id="profil" href="">Profil</a></li>
+                <li class="btn"><a id="competences" href="">Compétences</a></li>
+                <li class="btn"><a id="portfolio" href="">Portfolio</a></li>
+                <li class="btn"><a id="contact" href="">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section></section>
+        <!-- SECTION TITRE -->
+        <section class="titre">
+            <div class="title">
+                <div class="name">
+                    <h1>Virginia Mesta</h1>
+                </div>
+                <div class="training">
+                    <h2>Formation - Développeur Web et Web Mobile</h2>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION PROFIL -->
+        <section class="profil" #profil>
+            <div>
+                <div>
+                    <h3>À propos de moi</h3>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae non quisquam culpa, eius
+                            vitae deserunt?</p>
+                    </div>
+                    <div class="ghibli">
+                        <img src="./assets/img/bibi Ghibli.jpg" alt="">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <a class="btn" href="">Contactez moi</a>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION COMPETENCE -->
+        <section class="competence">
+            <div>
+                <h3>compétences</h3>
+            </div>
+            <div class="card">
+                <div class="blabla">
+                    <p>Les compétences ci-dessous sont en constante evolution et change constament. <br>Elle seront mise
+                        à
+                        jour aussi souvent que possible</p>
+                </div>
+            </div>
+            <div class="two-card">
+                <div class="card">
+                    <div>
+                        <h4>developpement web</h4>
+                    </div>
+                    <div class="logo">
+                        <div>
+                            <div class="html">
+                                <img src="./assets/img/icons8-html-5.svg" alt="logo html">
+                            </div>
+                            <p>HTML</p>
+                            <p>Les bases</p>
+                        </div>
+                        <div class="css">
+                            <div>
+                                <img src="./assets/img/icons8-css3.svg" alt="logo css">
+                            </div>
+                            <p>CSS</p>
+                            <p>Les bases</p>
+                        </div>
+                        <div class="js">
+                            <div>
+                                <img src="./assets/img/icons8-logo-javascript-64.png" alt="logo javascript">
+                            </div>
+                            <p>JavaScript</p>
+                            <p>Les bases</p>
+                        </div>
+                        <div class="sass">
+                            <div>
+                                <img src="./assets/img/icons8-sass.svg" alt="logo Sass">
+                            </div>
+                            <p>SASS</p>
+                            <p>Les bases</p>
+                        </div>
+                        <div class="Tailwind">
+                            <div>
+                                <img src="./assets/img/icons8-tailwind-css.svg" alt="logo Tailwind">
+                            </div>
+                            <p>TAILWIND</p>
+                            <P>Les bases</P>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div>
+                        <h4>web-design</h4>
+                        <div class="logo">
+                            <div>
+                                <div>
+                                    <img src="assets/img/icons8-figma-100.png" alt="logo figma">
+                                </div>
+                                <p>FIGMA</p>
+                                <p>Les bases</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <section></section>
@@ -22,4 +134,5 @@
     <script src="assets/scripts/homePage.js"></script>
     <script src="assets/scripts/footer.js"></script>
 </body>
+
 </html>
