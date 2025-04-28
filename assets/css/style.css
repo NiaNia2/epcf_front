@@ -7,66 +7,278 @@
   font-family: "Source";
   src: url(../fonts/SourceCodePro/SourceCodePro-Regular.ttf);
 }
-main .titre .title {
+main #titre {
+  display: flex;
+  justify-content: center;
+}
+main #titre .titre {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  text-align: center;
 }
-main .titre .title .name {
+main #titre .titre .name {
   letter-spacing: 2rem;
   text-transform: uppercase;
-  padding: 2rem 0;
-  margin-top: 2rem;
+  margin: 4rem 0;
 }
-main .titre .title .training {
+main #titre .titre .training {
   letter-spacing: 1rem;
-  width: 80vh;
+  width: 80%;
   text-align: center;
 }
-main .profil .cards {
+main #profil .profil {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
-main .profil .cards p {
+main #profil .profil .cards {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+main #profil .profil .cards .card {
+  width: 45%;
   text-align: center;
 }
-main .profil .cards .ghibli {
-  width: 30%;
+main #profil .profil .cards .ghibli {
+  width: 45%;
   background-color: #446983;
   border-radius: 0.8rem 0 0.8rem 0;
 }
-main .profil .buttons {
-  width: 100%;
-  margin: 5rem 0 0 19rem;
-}
-main .competence .two-card {
+main #profil .profil .buttons {
   display: flex;
-  justify-content: space-around;
-}
-main .competence .two-card .card .blabla {
-  display: flex;
+  justify-content: center;
   align-items: center;
+  margin: 2rem 0;
 }
-main .competence .two-card .card .logo {
+main #competence .competence {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+main #competence .competence .card {
+  width: 100%;
+}
+main #competence .competence .two-card {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+main #competence .competence .two-card .card {
+  width: 45%;
+}
+main #competence .competence .two-card .card .logo {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   text-align: center;
   gap: 3rem;
 }
-
-header nav .nav {
+main #portfolio .portfolio .carousel {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  margin-bottom: 10rem;
+}
+main #portfolio .portfolio .carousel .container-slide {
+  position: relative;
+}
+main #portfolio .portfolio .carousel .container-slide button {
+  position: absolute;
+  border: none;
+  outline: none;
+  font-size: 2.6rem;
+  z-index: 2;
+  transform: translateY(-50%);
+  top: 50%;
+}
+main #portfolio .portfolio .carousel .container-slide #prev {
+  left: 0;
+}
+main #portfolio .portfolio .carousel .container-slide #next {
+  right: 0;
+}
+main #portfolio .portfolio .carousel .container-slide .slide {
+  display: none;
+  transition: 0.5s ease-in-out;
+}
+main #portfolio .portfolio .carousel .container-slide .slide.active {
+  display: block;
+}
+main #contact .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #contact .contact .container-form {
+  width: 60%;
+  background-color: #446983;
+  border-radius: 0.8rem 0 0.8rem 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #contact .contact .container-form .info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+main #contact .contact .container-form .info .form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main #contact .contact .container-form .info .form label {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+main #contact .contact .container-form .info .form input {
+  width: 50%;
+  padding: 0.5rem;
+}
+main #contact .contact .container-form .info .contact {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.1rem;
 }
 
+@media screen and (max-width: 1240px) {
+  main #contact .contact .container-form {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1140px) {
+  main #profil .profil .cards {
+    width: 100%;
+  }
+  main #contact .contact .container-form {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 990px) {
+  main #competence .competence .two-card {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  main #competence .competence .two-card .card {
+    width: 100%;
+  }
+  main #contact .contact .container-form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  main #titre .titre {
+    text-align: center;
+  }
+  main #titre .titre .name {
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    margin: 4rem 0;
+  }
+  main #titre .titre .training {
+    letter-spacing: 0.5rem;
+    width: 100%;
+    text-align: center;
+  }
+  main #profil .profil .cards {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  main #profil .profil .cards .card {
+    width: 100%;
+    text-align: center;
+  }
+  main #profil .profil .cards .ghibli {
+    width: 100%;
+  }
+  main #contact .contact .container-form {
+    gap: 2rem;
+  }
+  main #contact .contact .container-form .info {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  main #contact .contact .container-form .info .form {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  main #contact .contact .container-form .info .form label {
+    text-align: center;
+  }
+  main #contact .contact .container-form .info .form input {
+    width: 100%;
+  }
+  main #contact .contact .container-form .info .contact {
+    width: 100%;
+    font-size: 1rem;
+    gap: 1rem;
+  }
+}
+footer {
+  text-align: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav .nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+header nav .burger {
+  position: relative;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+header nav .burger i {
+  font-size: 2rem;
+}
+header nav .burger:hover .burger-content {
+  display: flex;
+}
+header nav .burger-content {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  top: 1.9rem;
+}
+
+@media screen and (max-width: 768px) {
+  header nav .nav {
+    display: none;
+  }
+  header nav .burger {
+    display: flex;
+  }
+}
 .btn {
   border-radius: 0.8rem 0 0.8rem 0;
   background-color: #2E4A2E;
-  font-size: 2rem;
-  padding: 1rem;
-  width: 15%;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  width: 100%;
   text-align: center;
   font-family: "Source";
 }
@@ -151,6 +363,23 @@ p {
   font-family: "Source";
 }
 
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
 .container {
   width: 80%;
   margin: 0 auto;
