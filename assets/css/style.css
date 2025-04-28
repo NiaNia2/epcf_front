@@ -254,9 +254,6 @@ header nav .burger {
 header nav .burger i {
   font-size: 2rem;
 }
-header nav .burger:hover .burger-content {
-  display: flex;
-}
 header nav .burger-content {
   position: absolute;
   display: none;

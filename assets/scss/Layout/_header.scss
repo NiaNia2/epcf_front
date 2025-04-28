@@ -25,12 +25,6 @@ header {
       }
     }
 
-    .burger:hover {
-      .burger-content {
-        display: flex;
-      }
-    }
-
     .burger-content {
       position: absolute;
       display: none;
